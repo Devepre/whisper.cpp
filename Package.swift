@@ -20,7 +20,6 @@ let package = Package(
             exclude: [
                "bindings",
                "cmake",
-               "coreml",
                "examples",
                "extra",
                "models",
