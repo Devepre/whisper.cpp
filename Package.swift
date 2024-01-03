@@ -44,6 +44,8 @@ let package = Package(
             cSettings: [
                 .unsafeFlags(["-Wno-shorten-64-to-32", "-O3", "-DNDEBUG"]),
                 .define("GGML_USE_ACCELERATE"),
+                .define("WHISPER_USE_COREML"),
+                .define("WHISPER_COREML_ALLOW_FALLBACK"),
                 .unsafeFlags(["-fno-objc-arc"]),
                 .define("GGML_USE_METAL")
                 // NOTE: NEW_LAPACK will required iOS version 16.4+
